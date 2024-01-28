@@ -1,0 +1,338 @@
+/********f************
+    
+    Project 1 Stylesheet
+    Name: Dharmi Patel
+    Date: 2023-19-15
+    Updated: 2023-10-29
+    Description: Project 1
+
+*********************/
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e6e6e6;
+	font-family: Verdana, sans-serif;
+}
+
+div#container {
+    width: 870px;
+	background-color: #fff;
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 2px 2px 10px #a2a2a2, -1px -1px 2px #a2a2a2;
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+    margin-bottom: 0px;
+    border-right: 2px solid #0672d1;
+    padding-right: 10px;
+	font-size: 10.5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0672d1;
+}
+
+nav ul li:last-child {
+    border-right: none; /* Remove divider for the last item */
+}
+
+#search-form {
+    display: flex;
+}
+
+#search-box {
+    margin-right: 10px;
+}
+
+#search-button {
+    background-color: lightgrey;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0057a3;
+    color: #fff;
+}
+
+/* Header image styles */
+#header-image {
+    background-image: url('images/headerBackground.jpg');
+    background-size: cover;
+    background-position: top left;
+    padding: 20px;
+}
+
+#header-image h1 {
+    color: #edebea;
+	font-weight: normal;
+	letter-spacing: 7px;
+    font-size: 36px;
+    text-align: left;
+	margin-left: 20px;
+}
+
+#header-image p {
+    color: #edebea;
+	font-weight: bold;
+    font-size: 13px;
+	letter-spacing: 1px;
+    text-align: right;
+	margin-right: 20px;
+}
+
+/* Main navigation styles */
+#main-navigation ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px ;
+    background: linear-gradient(to top,  #1e5799 0%,#97cdf6 100%); 
+}
+
+#main-navigation ul li {
+    text-align: center;
+    margin-right: 10px;
+    border-right: 1px solid rgb(2, 19, 82); /* Divider between links */
+	padding-right: 10px; /* Spacing between links */
+	font-size: 12px;
+}
+
+#main-navigation ul li:last-child {
+    border-right: none; /* Remove divider for the last item */
+}
+
+#main-navigation ul li a {
+    text-decoration: none;
+    color: #edebea;
+}
+
+#main-navigation ul li a:hover,
+#main-navigation ul li a:focus {
+    text-decoration: underline;
+}
+
+.container-1 {
+	display: flex;
+	flex-direction: row;
+    row-gap: 10px;
+}
+
+/* Left navigation styles */
+#left-navigation {
+	display:flex ;
+    flex: 1;
+    padding: 0px;
+    color: black;
+    width: 87%;
+    margin-bottom: 20px;
+    border-right: 1px solid #fff;
+    padding-right: 0px; 
+}
+
+#left-navigation ul {
+    width: 90%;
+}
+
+#left-navigation ul li {
+	list-style-type: none;
+	background: linear-gradient(to top, rgb(163, 163, 163) 0%, rgb(227, 227, 227) 100%);
+    border-bottom: 0.5px solid lightgray;
+    margin-bottom: 0px;
+    padding: 8px;
+    position: relative;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* NASA support section styles */
+#nasa-support {
+	justify-content: center;
+    flex: 1;
+    width: 79%;
+    padding: 0px;
+    margin-top: 50px;
+    padding-right: 0px;
+	position: relative;
+}
+
+#nasa-logo {
+	float:right;
+	position: relative;	
+    margin-left: 15px;
+	top: 5px;
+	right: 5px;
+}
+
+#nasa-support p{
+    text-align: left;
+	position: relative;
+	font-weight: lighter;
+	font-size: 12px;
+	margin-right: 15px;
+    line-height: 1.5;
+    color: rgb(86, 85, 85);
+}
+
+/* Main Content styles */
+#small-link {
+    margin-left: -45px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+#small-link a{
+    text-decoration: none;
+    color: #0672d1;
+}
+
+#content {
+    flex: 2;
+    margin-top: 5px;
+    padding: 0px;
+    width: 105%;
+    float: right;
+    position: relative;
+}
+#content h1 {
+    font-size: 17px;
+}
+
+#content hr {
+    border: 1px solid lightgray;
+    margin: 10px 0;
+}
+
+#content a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #2466a0;
+}
+
+#content h2 {
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+#content p#p-2 {
+    font-size: 12px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    line-height: 1.7;
+    word-spacing: 0px;
+}
+
+#content figure {
+    border: 0.5px solid rgb(192, 191, 191); /* Add border around the image */
+    padding: 7.5px; /* Add padding around the image */
+    margin: 10px 0; /* Add margin around the image */
+    margin-top: 0px;
+    margin-right: 10px;
+    width: 45%;
+    float: right;
+    clear: right;
+}
+
+#content img#rover {
+    width: 100%;
+}
+
+#content figure p {
+    font-size: 12px;
+    text-align: left;
+    padding-top: 3px;
+    line-height: 1.15;
+}
+
+#content p#p-3 {
+    font-size: 12px;
+    line-height: 1.7;
+    word-spacing: 0px;
+}
+
+#content ul {
+    list-style: none;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: -10px;
+}
+
+#content ul li {
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+#content ul li a {
+    text-decoration: none;
+    color: #2466a0;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#content ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer styles */
+footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: #000;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #0672d1;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
